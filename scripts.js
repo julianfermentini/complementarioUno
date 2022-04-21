@@ -1,3 +1,4 @@
+/*
 let continua = true;
 alert("Ingrese dos numero para compararlos");
 let numeroUno = 0;
@@ -19,4 +20,27 @@ if (numeroUno > numeroDos) {
   alert("El numero dos es mayor");
 } else if (numeroUno === numeroDos) {
   alert("Los numero son iguales");
+}
+
+*/
+
+const sumar = (num1, num2) => num1 + num2;
+const restar = (num1, num2) => num1 - num2;
+const multiplicar = (num1, num2) => num1 * num2;
+const dividir = (num1, num2) => num1 / num2;
+
+let numeroUno = parseFloat(prompt("Ingrese un numero"));
+let numeroDos = parseFloat(prompt("Ingrese otro numero"));
+let operacion = prompt("Ingrese una operacion (+,-,*,/)");
+
+if (operacion === "+") {
+  alert(sumar(numeroUno, numeroDos));
+} else if (operacion === "*") {
+  alert(multiplicar(numeroUno, numeroDos));
+} else if (operacion === "/") {
+  alert(dividir(numeroUno, numeroDos));
+} else if (operacion === "-") {
+  alert(restar(numeroUno, numeroDos));
+} else {
+  alert("Operacion no valida");
 }
